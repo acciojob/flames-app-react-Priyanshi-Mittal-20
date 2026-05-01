@@ -75,11 +75,7 @@ let length =
       <input data-testid="input2" name="name2" onChange={handleSecond} placeholder="Enter second name" value={second}/>
       <button data-testid="calculate_relationship"  name="calculate_relationship" onClick={handleClick}>Calculate Relationship Future</button>
       <button data-testid="clear"  name="clear" onClick={handleClear}>Clear</button>
-      {
-        result && <h3 data-testid="answer">
-          {result}
-        </h3>
-      }
+      <h3 data-testid="answer">{result}</h3>
     </div>
   )
 }
